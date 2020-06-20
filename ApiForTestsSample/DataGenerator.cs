@@ -19,18 +19,20 @@ namespace ApiForTestsSample
                     return;
                 }
 
-                var item = new Item {Id = 1, Categoria = "Viagem", Descricao = "Fazer as malas"};
+                var item = new Item {Id = 1};
+                item.SetCategoria("Viagem");
+                item.SetDescricao("Arrumar as malas");
+                
 
                 var listaItens = new List<Item> {item};
                 
-                context.Lista.Add(new Lista
-                {
-                    Id = 1,
-                    Nome = "Minha lista",
-                    Items = listaItens
-
-                });
-
+                var lista = new Lista{Id = 1};
+                lista.SetNome("Minha lista");
+                lista.SetItem(listaItens);
+                
+                context.Lista.Add(lista);
+                
+                
                 context.SaveChanges();
             }
         }

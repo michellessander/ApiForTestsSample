@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using ApiForTestsample.Domain;
 using ApiForTestsSample.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -16,6 +17,12 @@ namespace ApiForTestsSample.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Lista> Get() => _listaService.GetAll();
+        public IActionResult Get()
+        {
+            var result = _listaService.GetAll();
+            
+            if (result.Any(x => x.IsValid() == false)) return BadRequest(result.SelectMany(x => x.GetErrors()));
+            return Ok(result);
+        }
     }
 }
