@@ -88,7 +88,7 @@ namespace ApiForTestsample.Domain {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to O nome deve ser informado..
+        ///   Looks up a localized string similar to O nome da lista deve ser informado..
         /// </summary>
         internal static string Nome_Null_Empty {
             get {

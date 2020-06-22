@@ -20,7 +20,7 @@ namespace ApiForTestsSample
                 }
 
                 var item = new Item {Id = 1};
-                item.SetCategoria("Viagem");
+                //item.SetCategoria("Viagem");
                 item.SetDescricao("Arrumar as malas");
                 
 

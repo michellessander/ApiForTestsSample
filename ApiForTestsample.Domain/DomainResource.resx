@@ -19,7 +19,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="Nome_Null_Empty">
-        <value>O nome deve ser informado.</value>
+        <value>O nome da lista deve ser informado.</value>
     </data>
     <data name="Item_Invalido">
         <value>O item informado na lista deve ser válido.</value>

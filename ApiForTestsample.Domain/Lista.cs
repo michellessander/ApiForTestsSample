@@ -21,13 +21,9 @@ namespace ApiForTestsample.Domain
         {
             if (!itens.Any()) return;
 
-            foreach (var item in itens)
-            {
-                if (!item.IsValid())
-                {
-                    AddError(DomainResource.Item_Invalido);
-                    return;
-                }
+            if (itens.Any(item => !item.IsValid())) {
+                AddError(DomainResource.Item_Invalido);
+                return;
             }
             Itens = itens;
         }
