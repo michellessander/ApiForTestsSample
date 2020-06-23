@@ -63,7 +63,7 @@ namespace ApiForTestSample.Domain.Tests
         public void DadoItemInvalidoAtribuidoAListaDeveRetornarErro()
         {
             //arrange
-            var mensagemErro = "O item informado na lista deve ser válido";
+            var mensagemErro = "O item informado na lista deve ser válido.";
             var lista = new Lista();
             var listaItem = new List<Item>();
             var item = new Item();
@@ -76,6 +76,7 @@ namespace ApiForTestSample.Domain.Tests
             //assert
             Assert.False(lista.IsValid());
             Assert.True(lista.GetErrors().FirstOrDefault() == mensagemErro);
+            
         }
         
         [Fact]
