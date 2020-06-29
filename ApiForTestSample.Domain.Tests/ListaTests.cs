@@ -24,15 +24,15 @@ namespace ApiForTestSample.Domain.Tests
             
         }
 
-        [Fact]
-        public void DadoNomeVazioAtribuidoAListaDeveRetornarErro()
+        [Theory,InlineData(""),InlineData(null)]
+        public void DadoNomeVazioOuNuloAtribuidoAListaDeveRetornarErro(string nome)
         {
             //arrange
             var lista = new Lista();
             var mensagemDeErro = "O nome da lista deve ser informado.";
 
             //act
-            lista.SetNome(string.Empty);
+            lista.SetNome(nome);
             
             //assert
             Assert.False(lista.IsValid());

@@ -46,28 +46,6 @@
           </e>
         </e>
       </e>
-      <e p="ApiForTestsSample" t="IncludeRecursive">
-        <e p="ApiForTestsSample.csproj" t="IncludeRecursive" />
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include">
-          <e p="ListaController.cs" t="Include" />
-        </e>
-        <e p="DataGenerator.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="ApiForTestsSample.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Startup.cs" t="Include" />
-      </e>
       <e p="ApiForTestsSample.Repositories" t="IncludeRecursive">
         <e p="ApiForTestsSample.Repositories.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
@@ -119,6 +97,40 @@
         </e>
       </e>
       <e p="ApiForTestsSample.sln" t="IncludeFlat" />
+      <e p="ApiForTestsSample.WebApi" t="IncludeRecursive">
+        <e p="ApiForTestsSample.WebApi.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ListaController.cs" t="Include" />
+        </e>
+        <e p="DataGenerator.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ApiForTestsSample.WebApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="ApiForTestsSample.WebApi.Tests" t="IncludeRecursive">
+        <e p="ApiForTestsSample.WebApi.Tests.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ListaControllerTest.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ApiForTestsSample.WebApi.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>

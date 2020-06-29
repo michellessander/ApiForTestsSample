@@ -38,7 +38,7 @@ namespace ApiForTestsSample
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ListaRepository>(opt => opt.UseInMemoryDatabase("ApiForTestsSample"));
+            services.AddDbContext<ListaRepository>(opt => opt.UseInMemoryDatabase("ApiForTestsSample.WebApi"));
             services.AddControllers();
             services.AddScoped<IListaService, ListaService>();
             services.AddScoped<IListaRepository, ListaRepository>();
