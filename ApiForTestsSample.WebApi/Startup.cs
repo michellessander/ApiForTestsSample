@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using ApiForTestsample.Domain;
-using ApiForTestsSample.Controllers;
 using ApiForTestsSample.Repositories;
 using ApiForTestsSample.Services;
 using Microsoft.AspNetCore.Builder;
